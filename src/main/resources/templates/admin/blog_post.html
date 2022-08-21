@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="/static/css/me.css">
+    <link rel="stylesheet" href="/static/lib/editor/css/editormd.min.css">
+</head>
+<body>
+<!--导航-->
+    <nav class = "ui inverted segment tb_mini m_shadow_small">
+        <div class="ui container">
+            <div class = "ui inverted secondary stackable menu">
+                <h2 class = "ui teal header item">Backend Management</h2>
+                <a href="#" class="m-item item m_mobile_hide"><i class="home icon"></i>Main Page</a>
+                <a href="#" class="m-item item m_mobile_hide"><i class="idea icon"></i>Category</a>
+                <a href="#" class="m-item item m_mobile_hide"><i class="tags icon"></i>Tags</a>
+                <div class="right m-item menu">
+                    <div class="ui dropdown item">
+                        <div class="text">
+                            <img class="ui avatar img" src="https://unsplash.it/100/100?image=1001" alt="">
+                            ZiFeng Chen
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" class="item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" class="active item">Post</a>
+                <a href="#" class="teal item">List</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!--中间内容-->
+    <div class = "tb_container_small tb_large">
+        <div class="ui container">
+            <form action="#" method="post" class="ui form">
+
+
+
+                <div class="required field">
+                    <div class="ui left labeled input">
+                        <div class="ui selection compact teal basic dropdown label">
+                            <input type="hidden" value="原创">
+                            <i class="dropdown icon"></i>
+                            <div class="text">Origin</div>
+                            <div class="menu">
+                                <div class="item" data-value="Origin">Origin</div>
+                                <div class="item" data-value="Reprint">Reprint</div>
+                                <div class="item" data-value="Translate">Translate</div>
+                            </div>
+                        </div>
+                        <label>
+                            <input type="text" name="title" placeholder="Title">
+                        </label>
+                    </div>
+                </div>
+            <div class="field">
+                <div id="md-content" style="z-index: 1 !important;">
+                    <textarea placeholder="Blog Content" name="content" style="display: none">
+                        #### Disabled options
+
+                    - TeX (Based on KaTeX);
+                    - Emoji;
+                    - Task lists;
+                    - HTML tags decode;
+                    - Flowchart and Sequence Diagram;
+                    </textarea>
+
+                </div>
+
+            </div>
+                <div class="two fields">
+                    <div class="field">
+                        <div class="ui left labeled action input">
+                            <label class="ui compact teal basic label">Category</label>
+                            <div class="ui fluid selection dropdown">
+                                <input type="hidden">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Category</div>
+                                <div class="menu">
+                                    <div class="item" data-value="1">User Story</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left labeled action input">
+                            <label class="ui compact teal basic label">Tags</label>
+                            <div class="ui fluid multiple search selection dropdown">
+                                <input type="hidden">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Tags</div>
+                                <div class="menu">
+                                    <div class="item" data-value="1">Python</div>
+                                    <div class="item" data-value="2">Java</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="recommend" name="recommend" checked class="hidden">
+                            <label for="recommend">Recommend</label>
+
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="Comment" name="Comment" class="hidden">
+                            <label for="Comment">Recommend</label>
+
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="like" name="like" class="hidden">
+                            <label for="recommend">Like</label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="ui error message"></div>
+                <div class="ui right aligned container">
+                    <button type="button" class="ui button" onclick="window.history.go(-1)">Return</button>
+                    <button class="ui secondary button">Save</button>
+                    <button class="ui basic secondary button">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <br>
+
+    <!--底部footer-->
+    <footer class="ui inverted vertical segment tb_massive">
+        <div class = "ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Blog</h4>
+                    <p class="">This is Zifeng's personal Blog</p>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Latest Blog</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class = "item">User Story</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Contact Me</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class = "item">Email: czf990318@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="four wide column">
+                    <div class="ui inverted link list">
+                    <div class="item">
+                    <img src = "../static/images/ins.jpg" class = "ui rounded image" alt = "" style="width: 120px">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src = "https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src = "https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<script src ="../static/lib/editor/editormd.min.js"></script>
+    <script>
+        //初始化markdown
+        var contentEditor;
+
+        $(function() {
+            contentEditor = editormd("md-content", {
+                width   : "90%",
+                height  : 640,
+                syncScrolling : "single",
+                path    : "../static/lib/editor/lib/"
+            });
+        });
+        $('.menu.toggle').click(function (){
+            $('.m-item').toggleClass('m_mobile_hide')
+        });
+        $('.ui.dropdown').dropdown({
+            on: "hover"
+        })
+        $('.ui.form').form({
+            fields:{
+                title:{
+                    identifier: 'title',
+                    rules: [{
+                        type:'empty',
+                        prompt:'Title: Please enter a title'
+                    }]
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>

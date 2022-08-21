@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+<!--导航-->
+    <nav class = "ui inverted segment tb_mini m_shadow_small">
+        <div class="ui container">
+            <div class = "ui inverted secondary stackable menu">
+                <h2 class = "ui teal header">Zifeng's Blog</h2>
+                <a href="#" class="m-item item m_mobile_hide"><i class="home icon"></i>Main Page</a>
+                <a href="#" class="m-item item m_mobile_hide"><i class="idea icon"></i>Category</a>
+                <a href="#" class=" m-item item m_mobile_hide"><i class="tags icon"></i>Tags</a>
+                <a href="#" class="m-item item m_mobile_hide"><i class="clone icon"></i>Archives</a>
+                <a href="#" class="active m-item item m_mobile_hide"><i class="info icon"></i>About Me</a>
+                <div class="right m-item item m_mobile_hide">
+                    <div class = "ui icon inverted transparent input">
+                        <label>
+                            <input type="text" placeholder="Searching">
+                        </label>
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--中间内容-->
+    <div class = "tb_container_small tb_large">
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="eleven wide column">
+                    <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image">
+                </div>
+                <div class="five wide column">
+                    <div class="top attached segment">
+                        <div class="ui header">About Me</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="mini">My name is Zifeng Chen, 22 years old, Master of Computer Science Student in Boston University,like music, movie and sport</p>
+                        <p class="mini">Love programming, I am exploring ways to efficiently learn programming techniques...</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic left pointing label m_tiny">Coding</div>
+                        <div class="ui orange basic left pointing label m_tiny">Music</div>
+                        <div class="ui orange basic left pointing label m_tiny">Movie</div>
+                        <div class="ui orange basic left pointing label m_tiny">Sport</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic left pointing label m_margin">Python</div>
+                        <div class="ui orange basic left pointing label m_margin">Java</div>
+                        <div class="ui orange basic left pointing label m_margin">MySql</div>
+                        <div class="ui orange basic left pointing label m_margin">C++</div>
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui git circular icon button" data-content ='https://github.com/zf990318?tab=repositories'><i class="github icon"></i> </a>
+                        <a href="#" class="ui linkin circular icon button" data-content="https://www.linkedin.com/in/zifeng0318/"><i class="linkedin icon"></i> </a>
+                        <a href="#" class="ui instagram circular icon button"><i class="instagram icon"></i> </a>
+                    </div>
+                    <div class="ui ins flowing popup transition hidden">
+                        <img src="../static/images/ins.jpg" alt="" class="ui rounded image" style="width: 100px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <!--底部footer-->
+    <footer class="ui inverted vertical segment tb_massive">
+        <div class = "ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Blog</h4>
+                    <p class="">This is Zifeng's personal Blog</p>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Latest Blog</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class = "item">User Story</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Contact Me</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class = "item">Email: czf990318@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="four wide column">
+                    <div class="ui inverted link list">
+                    <div class="item">
+                    <img src = "../static/images/ins.jpg" class = "ui rounded image" alt = "" style="width: 120px">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src = "https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src = "https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function (){
+            $('.m-item').toggleClass('m_mobile_hide')
+        });
+        $('.instagram').popup({
+            popup:$('.ins.popup'),
+            on:'click',
+            position:'bottom center'
+        });
+        $('.git').popup();
+        $('.linkin').popup();
+
+    </script>
+</body>
+</html>

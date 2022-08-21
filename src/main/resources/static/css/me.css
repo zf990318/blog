@@ -1,0 +1,76 @@
+
+
+body{
+    background: url("../images/leaves.png");
+}
+
+.tb_container_small{
+    max-width: 72em; !important;
+    margin: auto; !important;
+}
+
+.tb_mini{
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.tb_massive{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+
+.tb_large{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+
+.m_top_right{
+    position:absolute;
+    top:0;
+    right: 0;
+}
+.m_mobile_show{
+    display: none; !important;
+}
+.m_tiny{
+    padding-top: 0.5em;!important;
+    padding-bottom: 0.5em;!important;
+}
+.m_black{
+    color: #333;!important;
+}
+.m_margin{
+    margin-top: 0.3em;!important;
+    margin-bottom: 0.3em;!important;
+
+}
+@media screen and (max-width: 768px){
+    .m_mobile_hide{
+        display: none; !important;
+    }
+    .m_mobile_show{
+        display: block; !important;
+    }
+}
+.tb_lr{
+    padding-left: 4em;!important;
+    padding-right: 4em; !important;
+}
+.m_shadow_small{
+    -webkit-box-shadow:0 4px 8px rgba(0,0,0,0.2) ;!important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);!important;
+}
+
+.m-fixed{
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
+.m-right-bottom{
+    bottom:0 !important;
+    right: 0 !important;
+}
+
+.m-padded-small{
+    padding: 1em !important;
+}
