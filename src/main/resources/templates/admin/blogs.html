@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head th:replace ="admin/fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Management</title>
@@ -114,6 +114,9 @@
 
 
     <br>
+    <br>
+    <br>
+    <br>
 
     <!--底部footer-->
     <footer class="ui inverted vertical segment tb_massive">
@@ -138,9 +141,9 @@
 
                 <div class="four wide column">
                     <div class="ui inverted link list">
-                    <div class="item">
-                    <img src = "../static/images/ins.jpg" class = "ui rounded image" alt = "" style="width: 120px">
-                    </div>
+                        <div class="item">
+                            <img src = "/static/images/ins.jpg" class = "ui rounded image" alt = "" style="width: 120px">
+                        </div>
                     </div>
                 </div>
             </div>
